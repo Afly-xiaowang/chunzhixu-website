@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://a.amap.com/jsapi_demos/static/demo-center/css/demo-center.css" />
+    <title>联系我们丨菏泽椿枝序花艺</title>
+	
+    <style>
+        html,
+        body,
+        #container {
+          width: 100%;
+          height: 500px;
+        }
+		
+		.amap-icon img {
+            width: 25px;
+            height: 34px;
+        }
+
+        .amap-marker-label{
+            border: 0;
+            background-color: transparent;
+        }
+
+        .info{
+            position: relative;
+            margin:0;
+            top: 0;
+            right: 0;
+            min-width: 0;
+        }
+    </style>
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/icofont.min.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/flesscreen.css">
+    <link rel="stylesheet" href="css/style.css">
+    
+    <link rel="icon" href="images/favicon.png" sizes="32x32" />
+    <link href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Cairo:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Marcellus&display=swap" rel="stylesheet"> 
+	<!-- 复制微信号 -->
+ <script type="text/javascript">
+    function copyUrl2()
+        {
+            var Url2=document.getElementById("biao1").innerText;
+            var oInput = document.createElement('input');
+            oInput.value = Url2;
+            document.body.appendChild(oInput);
+            oInput.select(); // 选择对象
+            document.execCommand("Copy"); // 执行浏览器复制命令
+            oInput.className = 'oInput';
+            oInput.style.display='none';
+            alert('您已成功复制客服微信号chunzhixuhuayi，请前往微信添加！');//复制后提示语
+            window.location.href="weixin://";//打开微信
+        }
+</script> 
+
+
+</head>
+<body>
+    <a href="javascript:void(0)" id="backToTop" class="back-to-top" style="display:none;"><i class="icofont-rounded-up"></i></a>
+    <section id="tb-slider-cms">
+        <div class="tb-herder-cms">
+            <div class="container">
+                <nav class="navbar navbar-expand-lg navbar-light">
+                    <div class="temp">
+                        <a class="navbar-brand logo" href="index.html"><img src="images/logo.png" class="img-fluid" alt="navbar-brand"></a>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                            <a class="nav-link " aria-current="page" href="index.html">主页</a>
+                            </li>
+                            <li class="nav-item">
+                            <a class="nav-link " href="about-us.html">椿枝序</a>
+                            </li>
+                            <li class="nav-item">
+                            <a class="nav-link" href="services.html">花艺培训</a>
+                            </li>
+                            <li class="nav-item">
+                            <a class="nav-link " href="gallery.html">图集</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link " href="blog.html">产品信息</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" href="contact.html">联系我们</a>
+                            </li>
+                        </ul>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+        <div class="tb-about-us-slider  tb-about-us-slider-images m-0">
+            <div class="tb-about-us-slider-image">
+                <img src="images/about-us-slider.jpg" class="img-fluid" alt="tb-about-us-slider-image">
+                <div class="tb-about-us-slider-text">
+                    <h2>Contact US</h2>
+                    <ul>
+                        <li><a href="index.html"> 主页</a></li><li><a href="contact.html">联系我们</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+	
+	
+<section id="tb-blog-page-cms" class="tb-contact-page-margin">
+    <div class="container" id="tb-blog-cms">
+        <div class="tb-custom-title">
+            <p>Contact Us</p>
+            <h2>联系我们</h2>
+        </div>
+    </div>
+	<div id="tb-brandlogo-cms">
+        <div class="container">
+        <div>
+            <div style="margin: 10px;">
+        		<div data-op="division" style="display: flex;justify-content: center;align-items: center;margin-top: 15px;" >
+	        		<div style="width: 32%;margin:0px 10px;box-sizing:border-box;max-width:32% !important;" data-width="32%">
+	        			<a href="tel:15666623394">
+	        			<img style="width: 100%;display: block;vertical-align:baseline;box-sizing:border-box;max-width:100% !important;" src="images/dianhua.png" data-width="100%"/></a>
+	        		</div>
+	        	</div>
+        	</div>            <div style="margin: 10px;">
+        		<div data-op="division" style="display: flex;justify-content: center;align-items: center;margin-top: 15px;" >
+	        		<div style="width: 32%;margin:0px 10px;box-sizing:border-box;max-width:32% !important;" data-width="32%">
+        				<a href="#"><img style="width: 100%;display: block;vertical-align:baseline;box-sizing:border-box;max-width:100% !important;" src="images/weixin.png" data-width="100%" onclick="copyUrl2()"/>
+        				<p style="display:none;" cols="20" id="biao1">chunzhixuhuayi</p>
+        				</a>
+        			</div>
+					
+					
+	        		
+	        	</div>
+        	</div>
+        	<div style="margin: 10px;">
+        		<div data-op="division" style="display: flex;justify-content: center;align-items: center;margin-top: 15px;" >
+        			<div style="width: 32%;margin:0px 10px;box-sizing:border-box;max-width:32% !important;" data-width="32%">
+	        			<a href="mailto:15666623394@163.com">
+	        			<img style="width: 100%;display: block;vertical-align:baseline;box-sizing:border-box;max-width:100% !important;" src="images/youxiang.png" data-width="100%" /></a>
+	        		</div>
+	        		<div style="width: 32%;margin:0px 10px;box-sizing:border-box;max-width:32% !important;" data-width="32%">
+	        			<a href="https://uri.amap.com/marker?position=115.489822,35.233129&name=椿枝序Flower&src=mypage&coordinate=gaode&callnative=0">
+	        			<img style="width: 100%;display: block;vertical-align:baseline;box-sizing:border-box;max-width:100% !important;" src="images/daohang.png" data-width="100%" /></a>
+	        		</div>
+        		</div>
+        	</div>
+	        <div style="margin: 10px;">
+	        	<div data-op="division" style="display: flex;justify-content: center;align-items: center;margin-top: 15px;" hm_fix="337:348">
+	        		<div style="width: 32%;margin:20px 4px;box-sizing:border-box;max-width:32% !important;" data-width="32%">
+	        			<a href="https://www.xiaohongshu.com/user/profile/62df49aa000000001f0042d7?xsec_token=ABWmyPfh1nIdFckeS4YXPTdf2e4GPpPuQp7W250FF4VEs%3D&xsec_source=pc_search">
+	        			<img style="width: 100%;display: block;vertical-align:baseline;box-sizing:border-box;max-width:100% !important;" src="images/redbook3.jpg" data-width="100%"/></a>
+	        		</div>
+	        		<div style="width: 32%;margin:20px 4px;box-sizing:border-box;max-width:32% !important;" data-width="32%">
+		        		<a href="https://www.xiaohongshu.com/user/profile/68db81bd0000000037007931?channel_type=web_note_detail_r10&parent_page_channel_type=web_profile_board&xsec_token=AB9fr0IGSxGPkF-pw--Kg9HJ6fyDKejCr1k0j1ycNYcRw=&xsec_source=pc_note">
+		        		<img style="width: 100%;display: block;vertical-align:baseline;box-sizing:border-box;max-width:100% !important;" src="images/redbook1.jpg" data-width="100%"/></a>
+		        	</div>
+		        	<div style="width: 32%;margin:20px 4px;box-sizing:border-box;max-width:32% !important;" data-width="32%">
+		        		<a href="https://www.xiaohongshu.com/user/profile/68fce46e000000003702dfb1?xsec_token=ABS_gtsD0rycDbXuFaXSpUv9lSGuCmjZppXHDwbYyGczg=&xsec_source=pc_search">
+		        		<img style="width: 100%;display: block;vertical-align:baseline;box-sizing:border-box;max-width:100% !important;" src="images/redbook2.jpg" data-width="100%"/></a>
+	        		</div>
+	        	</div>
+	        </div>
+        </div>
+			
+			
+			
+			
+			
+			
+
+        </div>
+    </div>	
+ </section>	
+ 
+<div id="container"></div>
+     <!-- 加载地图JSAPI脚本 -->
+<script src="https://webapi.amap.com/maps?v=2.0&key=26dd093d1816d99b6dccddb596cd0744"></script>
+<script>
+    var map = new AMap.Map('container', {
+        viewMode: '3D', // 默认使用 2D 模式，如果希望使用带有俯仰角的 3D 模式，请设置 viewMode: '3D'
+        zoom:18, // 初始化地图层级
+        center: [115.489822,35.233129] // 初始化地图中心点
+    });
+	
+    const position = new AMap.LngLat(115.489822,35.233129); //Marker 经纬度
+    var marker = new AMap.Marker({
+        position: map.getCenter(),
+        icon: 'images/map-marker.png',
+        anchor:'bottom-center',
+        offset: new AMap.Pixel(0, 0)
+    });
+
+    marker.setMap(map);
+
+    // 设置鼠标划过点标记显示的文字提示
+    marker.setTitle('菏泽丨椿枝序Flower');
+
+    // 设置label标签
+    // label默认蓝框白底左上角显示，样式className为：amap-marker-label
+    marker.setLabel({
+        direction:'right',
+        offset: new AMap.Pixel(10, 0),  //设置文本标注偏移量
+        content: "<div class='info'>菏泽丨椿枝序Flower</div>", //设置文本标注内容
+    });
+	
+</script>
+
+	
+
+
+    <footer id="tb-footer-cms">
+        <div class="container">
+            <div class="tb-footer-border">
+                <div class="row">
+                    <div class="col-lg-4">
+                        <div class="tb-footer-logo-text">
+                            <a href="index.html"><img src="images/logo2.png" class="img-fluid" alt="tb-footer-logo-text"></a>
+                            <p>专注于花艺设计、花艺培训<br>欢迎对花艺感兴趣的姐妹们前来探讨.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-8">
+                        <div class="row">
+                            <div class="col-lg-3 footer-toggle-menu">
+                                <div class="tb-footer-manu">
+                                    <h2>Quick Links</h2>
+                                    <ul class="list-unstyled">
+                                        <li><a href="index.html"><i class="icofont-caret-right"></i>主页</a></li>
+                                        <li><a href="about-us.html"><i class="icofont-caret-right"></i>椿枝序</a></li>
+                                        <li><a href="services.html"><i class="icofont-caret-right"></i>花艺培训</a></li>
+                                        <li><a href="gallery.html"><i class="icofont-caret-right"></i>图集</a></li>
+                                        <li><a href="blog.html"><i class="icofont-caret-right"></i>产品信息</a></li>
+                                        <li><a href="contact.html"><i class="icofont-caret-right"></i>联系我们</a></li>
+                                    </ul>
+                                </div>
+                            </div>   
+                            <div class="col-lg-4 footer-toggle-menu">
+                                <div class="tb-footer-contectus tb-footer-manu">
+                                    <h2>联系我们</h2>
+                                    <ul class="list-unstyled">
+                                        <li>
+                                            <div class="tb-footer-contect-section">
+                                                <div class="tb-footer-contect-icon">
+                                                    <i class="icofont-location-pin"></i>
+                                                </div>
+                                                <div class="tb-footer-contect-text">
+                                                    <h3>Location :</h3>
+                                                    <p>山东省菏泽市 <br> 中华路与华英路 <br> 交叉口西北角611号院内</p>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="tb-footer-contect-section">
+                                                <div class="tb-footer-contect-icon">
+                                                    <i class="icofont-phone call"></i>
+                                                </div>
+                                                <div class="tb-footer-contect-text">
+                                                    <h3>Phone :</h3>
+                                                    <a href="tel:15666623394">+86 15666623394</a>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="tb-footer-contect-section">
+                                                <div class="tb-footer-contect-icon">
+                                                    <i class="icofont-ui-message email"></i>
+                                                </div>
+                                                <div class="tb-footer-contect-text">
+                                                    <h3>Email :</h3>
+                                                    <a href="mailto:15666623394@163.com">15666623394@163.com</a>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>  
+                            <div class="col-lg-5 footer-toggle-menu">
+                                <div class="tb-footer-instagram tb-footer-manu tb-footer-instagram-2">
+                                    <h2>服务特色</h2>
+                                    <ul class="list-unstyled">
+                                        <li class="tb-footer-instagram-img">
+                                            <img src="images/tb-footer-instagram-img-01.jpg" class="img-fluid" alt="tb-footer-instagram-img">
+                                            <a href="#"><i class="#图标#"></i></a>
+                                        </li>
+                                        <li class="tb-footer-instagram-img">
+                                            <img src="images/tb-footer-instagram-img-02.jpg" class="img-fluid" alt="tb-footer-instagram-img">
+                                            <a href="#"><i class="#图标#"></i></a>
+                                        </li>
+                                        <li class="tb-footer-instagram-img">
+                                            <img src="images/tb-footer-instagram-img-03.jpg" class="img-fluid" alt="tb-footer-instagram-img">
+                                            <a href="#"><i class="#图标#"></i></a>
+                                        </li>
+                                        <li class="tb-footer-instagram-img">
+                                            <img src="images/tb-footer-instagram-img-04.jpg" class="img-fluid" alt="tb-footer-instagram-img">
+                                            <a href="#"><i class="#图标#"></i></a>
+                                        </li>
+                                        <li class="tb-footer-instagram-img">
+                                            <img src="images/tb-footer-instagram-img-05.jpg" class="img-fluid" alt="tb-footer-instagram-img">
+                                            <a href="#"><i class="#图标#"></i></a>
+                                        </li>
+                                        <li class="tb-footer-instagram-img">
+                                            <img src="images/tb-footer-instagram-img-06.jpg" class="img-fluid" alt="tb-footer-instagram-img">
+                                            <a href="#"><i class="#图标#"></i></a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>  
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="tb-sub-footer">
+                <div class="tb-footer-copywrite">
+                    <p>ICP备案号：鲁2025167016号-1  Copyright © 椿枝序 All Rights Reserved.</a></p>
+                </div>
+                <div class="tb-footer-social-icon">
+                    <ul>
+                        <li><a href="#"><i class="icofont-#图标#"></i></a></li>
+                        <li><a href="#"><i class="icofont-#图标#"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+        <script src="js/jquery-slim.min.js"></script>
+        <script src="js/jQuery.min.js"></script>
+        <script src="js/owl.carousel.min.js"></script>
+        <script src="js/costom.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/ajax-mail.js"></script>
+	<script>
+        $('#blog').owlCarousel({
+            // loop:true,
+            margin:30,
+            autoplay:true,
+            autoplayTimeout:5000,
+            autoplayHoverPause:true,
+            nav:true,
+            dots:false,
+            responsive:{
+                0:{
+                    items:1
+                },
+                576:{
+                    items:2
+                },
+                991:{
+                    items:2
+                },
+                992:{
+                    items:3
+                }
+            }
+        })
+    </script>
+    
+    <script>
+        $('#brandlogo').owlCarousel({
+            loop:true,
+            margin:30,
+            autoplay:true,
+            autoplayTimeout:5000,
+            autoplayHoverPause:true,
+            nav:true,
+            dots:false,
+            responsive:{
+                0:{
+                    items:2
+                },
+                576:{
+                    items:3
+                },
+                992:{
+                    items:4
+                },
+                1200:{
+                    items:5
+                }
+            }
+        })
+    </script>
+</body>
+</html>
